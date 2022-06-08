@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
+
 
 namespace LoginAPI.Models.Login
 {
     public class Credencial
     {
+        [DefaultValue("username")]
         public string? Username { get; set; }
+
+        [DefaultValue("password")]
         public string? Password { get; set; }
     }
 }
